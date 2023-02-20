@@ -1,0 +1,11 @@
+<div>
+    <label for="nome">Inserisci una stringa:</label>
+    <input type="text" id="text" [(ngModel)]="text">
+    <label for="signature">Inserisci  la signature:</label>
+    <input type="text" id="signature" [(ngModel)]="signature">
+    <button (click)="request()">Validate</button>
+  </div>
+  <div *ngIf="messaggio">
+    <p>{{ messaggio }}</p>
+  </div>
+  
